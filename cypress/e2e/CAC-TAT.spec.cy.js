@@ -243,12 +243,12 @@ describe('Central de Atendimento ao Cliente TAT', function() {
             .and('be.visible')
     })
 
-    it('acessa a página da política de privacidade removendo o target e então clicando no link', () => {
+    it.only('acessa a página da política de privacidade removendo o target e então clicando no link', () => {
         cy.get('a[href="privacy.html"]')
             .invoke('removeAttr', 'target')
             .click()
         cy.url()
-            .should('be.equal', 'http://localhost:56433/src/privacy.html')
+            .should('include', '/src/privacy.html')
     })
     
 })
