@@ -25,8 +25,7 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 Cypress.Commands.add('preencheCamposObrigatoriosEnviar', (name, lastName, email) =>{
 
-    const longText = 'Teste, teste, teste, teste, teste, teste, teste, teste, teste, teste, teste, teste, teste, teste, teste, teste, teste, teste, teste, teste, teste, teste, teste, teste, teste, teste, teste.'
-
+    const longText = Cypress._.repeat('Teste, ', 20)
     cy.get('#firstName')
         .should('be.visible')
         .type(name)
@@ -43,7 +42,7 @@ Cypress.Commands.add('preencheCamposObrigatoriosEnviar', (name, lastName, email)
 
     cy.get('#open-text-area')
         .should('be.visible')
-        .type(longText)
+        .invoke('val', longText)
         .and('have.value', longText, {delay:0})
 
     cy.get('.button[type="submit"]')
