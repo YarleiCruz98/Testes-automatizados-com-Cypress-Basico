@@ -1,4 +1,4 @@
-# cy-basico-v2
+# Boas práticas em automação de testes com Cypress
 
 [![main](https://github.com/wlsf82/cy-data-test/actions/workflows/ci.yml/badge.svg)](https://github.com/wlsf82/cy-data-test/actions)
 
@@ -33,3 +33,23 @@ If you want to support this project, leave a ⭐.
 ___
 
 This project was created with 💚 by [Walmyr](https://walmyr.dev).
+___
+
+## Objetivo
+- O curso abrange a instalação do Cypress e o setup inicial para a escrita de testes. Exploraremos diversas interações com aplicações web, incluindo navegação por URLs e diversas ações como digitação, seleção de opções e cliques. Além disso, aprenderemos a adicionar verificações de resultados esperados (assertions). Ao final, será demonstrado como executar os testes em um servidor de integração contínua no GitHub Actions.
+
+## O que aprendi
+- Como configurar um projeto Cypress do zero;
+- Como visitar páginas locais e remotas;
+- Como lidar com os elementos mais comuns encontrados em aplicações web;
+- Como testar upload de arquivos;
+- Como realizar as mais diversas verificações de resultados esperados;
+- Como criar comandos customizados;
+- Como lidar com links que abrem em outra aba do navegador;
+- Como rodar testes simulando as dimensões de um dispositivo móvel;
+- Como resolver os mesmos problemas de diferentes formas, conhecendo a API do Cypress;
+- Como executar os testes em um pipeline de integração contínua sempre que mudanças ocorrerem no código da aplicação (ou dos testes);
+- Como criar uma documentação mínima para seu projeto de testes automatizados;
+
+## Certificado
+https://www.udemy.com/certificate/UC-2a133c77-93ae-42fb-afdc-0f3a8e4f7db7/
